@@ -1,0 +1,174 @@
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body-max-width{
+  max-width: 1200px;
+  margin: auto;
+}
+ul{
+  list-style: none;
+}
+#nav-header{
+  height: 72px;
+}
+.nav-header-inner{
+  /* background-color: blueviolet; */
+  padding: 12px 36px;
+  height: 72px;
+  /* margin: 0 90px; */
+  display: flex;
+  
+}
+.nav-header-logo{
+  height: 48px;
+  width: 86px;
+  padding-right: 6px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /* moves the element up by 50% of its own height */
+}
+
+.nav-search-box{
+    position: relative; /* Required for the icon to be positioned */
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 1000px;
+    
+    position: relative; /* adds a positioning context for the search icon */
+    padding-right: 18px;
+    margin-right: 20px;
+  }
+.search-input {
+    position: relative;
+    width: 95%;
+    height: 100%;
+    font-size: 16px;
+    border-width: 2px;
+    border-color: black;
+    padding-left: 18px;
+    border-top-left-radius: 96px;
+    border-bottom-left-radius: 96px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    box-shadow: none;
+    background: transparent;
+    
+}
+ 
+.nav-search-box-icon {
+  height: 100%;
+  width: 5%;
+  justify-content: space-around;
+  display: flex; /* make the icons appear in a row */
+  align-items: center; /* center the icons vertically */
+  cursor: pointer; /* change the cursor to a pointer when hovering over the icon */
+  border: 1px solid  black;
+  border-width: 2px;
+  border-left: #FF0000;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 96px;
+  border-bottom-right-radius: 96px;
+}
+
+/* ------------------------main---------------------- */
+
+.nav-main{
+  height: 48px;
+  width: 175px;
+}
+.nav-main ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-sign-in-button {
+  background-color: transparent;
+  color: black;
+  border: 2px  rgb(255, 255, 255);
+  border-radius: 50%; /* makes the border circular */
+  padding: 10px;
+  cursor: pointer;
+}
+.nav-sign-in-button:hover {
+  background-color: lightgrey;
+}
+.nav-favourite-button {
+  /* style the button */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #FF0000; /* red color */
+
+  /* style the icon */
+  font-size: 20px; /* adjust icon size */
+}
+
+.nav-favourite-button:hover {
+  /* style the button when the mouse is hovering over it */
+  color: #FFA07A; /* lighter red color */
+}
+
+.nav-favourite-button .fa-heart {
+  /* style the heart icon */
+  transition: transform 0.3s ease-in-out; /* add a transition effect when the icon is hovered over or clicked */
+}
+
+.nav-favourite-button:hover .fa-heart {
+  /* style the heart icon when the button is hovered over */
+  color: #000000; /* black color */
+  transform: scale(1.2); /* increase the size of the icon */
+}
+
+.nav-favourite-button.active .fa-heart {
+  /* style the heart icon when the button is in an "active" state */
+  color: #FF0000; /* red color */
+}
+
+button.nav-cart {
+  background-color: transparent;
+  color: rgb(56, 52, 52);
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+button.nav-cart:hover {
+  background-color: rgb(247, 240, 240);
+}
+
+button.nav-cart i.fa-solid.fa-cart-shopping {
+  margin-right: 5px;
+}
+
+/* -------------------nav-categories ---------------------*/
+#nav-header-category{
+  display: flex;
+  align-items: center;
+  height: 34px;
+
+  padding: 0px 36px;
+  
+ background-color: #000000;
+  
+}
+#nav-header-category ul{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    /* font-weight: 400; */
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #FF0000;
+}
+
+
+
+
